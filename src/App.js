@@ -7,11 +7,20 @@ import "./App.css";
 import Header from "./Header/Header";
 
 function App() {
+  const user = {
+    firstName: "Samy",
+  };
+  const content_fr = {
+    greetingsMessage: "Bonjour ",
+  };
+
   const conatainerClassName = "App";
   return (
     <div className={conatainerClassName}>
-      <h2>Un truc Nouveau à Récup avec git pull</h2>
-      <Header></Header>
+      <Header
+        pseudo={user.firstName}
+        message={content_fr.greetingsMessage}
+      ></Header>
     </div>
   );
 }

@@ -5,8 +5,8 @@ import React from "react";
 import classes from "./Header.module.css";
 
 // Une fonction qui retourne du JSX est un composant react
-const Header = () => {
-  return <div className={classes.maDiv}>Mon Header</div>;
+const Header = ({ message, pseudo }) => {
+  return <div className={classes.maDiv}>{message + pseudo}</div>;
 };
 
 // ceci est un export par défaut (l'autre type d'export s'appelle
