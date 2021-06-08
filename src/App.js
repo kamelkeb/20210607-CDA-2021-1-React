@@ -13,14 +13,15 @@ function App() {
   const content_fr = {
     greetingsMessage: "Bonjour ",
   };
+  //const dynamicContent = <span>Partie</span>
 
   const conatainerClassName = "App";
   return (
     <div className={conatainerClassName}>
-      <Header
-        pseudo={user.firstName}
-        message={content_fr.greetingsMessage}
-      ></Header>
+      <Header pseudo={user.firstName} message={content_fr.greetingsMessage}>
+        <span>Partie Droite</span>
+        <p>Petit paragraphe</p>
+      </Header>
     </div>
   );
 }
