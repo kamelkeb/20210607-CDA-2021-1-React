@@ -1,4 +1,9 @@
-import "./App.css"; // import de styles globaux
+// import de styles globaux
+// Attention les styles importés de la sorte s'appliqueront sur toute
+// l'arborescence de composants de mon app
+import "./App.css";
+
+// Ceci est un import par défaut d'un composant qu'on a créé nous même
 import Header from "./Header/Header";
 
 function App() {
