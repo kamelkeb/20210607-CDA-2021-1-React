@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"; // import de styles globaux
+import Header from "./Header/Header";
 
 function App() {
+  const texte = "Premières petites manips";
+  const conatainerClassName = "App";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={conatainerClassName}>
+      <Header></Header>
+      <h2>Hello CDA 2021-1</h2>
+      <p>{texte.toUpperCase()}</p>
     </div>
   );
 }
