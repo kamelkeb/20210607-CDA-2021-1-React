@@ -1,0 +1,13 @@
+.Layout {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 720px) {
+    .Layout {
+        justify-content: inherit;
+    }
+}
