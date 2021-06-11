@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import classes from "./ColorBox.module.css";
 
-const ColorBox = (props) => {
-  const { colorsChannel } = props;
-
+const ColorBox = ({ colorsChannel }) => {
   // Colors
   const [colors, setColors] = useState([0, 0, 0]);
 

@@ -6,9 +6,19 @@ const headerContent = {
 };
 
 const menuContent = [
-  { background: "green", name: "menu Item 1", id: "menuItem1" },
-  { background: "violet", name: "menu Item 2", id: "menuItem2" },
-  { background: "blue", name: "menu Item 3", id: "menuItem3" },
+  { background: "green", name: "Compteur", id: "menuItem1", path: "/compteur" },
+  {
+    background: "violet",
+    name: "Couleurs",
+    id: "menuItem2",
+    path: "/couleurs",
+  },
+  {
+    background: "grey",
+    name: "Couleurs2",
+    id: "menuItem3",
+    path: "/couleurs/2",
+  },
 ];
 
 const colorsChannel = [

@@ -3,8 +3,7 @@ import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import classes from "./Layout.module.css";
 
-const Layout = (props) => {
-  const { menuContent, headerContent, children } = props;
+const Layout = ({ menuContent, headerContent, children }) => {
   const { user, content } = headerContent;
   return (
     <div className={classes.Layout}>

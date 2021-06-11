@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import classes from "./ColorBox.module.css";
 import { useColors } from "../colorsFeature";
 
-const ColorBox2 = (props) => {
-  const { colorsChannel } = props;
-
+const ColorBox2 = ({ colorsChannel }) => {
   const [deltaInputBuffer, setDeltaInputBuffer] = useState(10);
   const [delta, setDelta] = useState(10);
   const [invalidDeltaInput, setInvalidDeltaInput] = useState(false);
