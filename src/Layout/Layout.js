@@ -5,12 +5,11 @@ import classes from "./Layout.module.css";
 
 const Layout = (props) => {
   const { menuContent, headerContent, children } = props;
-  const { user, content, compteur } = headerContent;
-
+  const { user, content } = headerContent;
   return (
     <div className={classes.Layout}>
       <Header
-        pseudo={user.firstname + compteur}
+        pseudo={user.firstname}
         message={content.greetingMessage}
       ></Header>
       <Menu content={menuContent}></Menu>
@@ -20,12 +19,3 @@ const Layout = (props) => {
 };
 
 export default Layout;
-
-/*
-const listKeyValues = {
-    key1: "value1",
-    key2: "value2",
-    key3: "value3",
-}
-{ ...listKeyValues}
-*/

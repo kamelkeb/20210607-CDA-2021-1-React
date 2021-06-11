@@ -1,39 +1,22 @@
 import "./App.css";
-import React, { useState } from "react";
+import ColorBox from "./ColorBox/ColorBox";
 import Layout from "./Layout/Layout";
-
+import Compteur from "./Compteur/Compteur";
 import {
-  containerClass as mockContainerClass,
-  menuContent as mockMenuContent,
-  headerContent as mockHeaderContent,
+  containerClass,
+  headerContent,
+  menuContent,
+  colorsChannel,
 } from "./mockData";
 
-import { containerClass, menuContent, headerContent } from "./data";
-
 function App() {
-  const effectiveContainerClass = containerClass || mockContainerClass;
-  const effectiveCenuContent = menuContent || mockMenuContent;
-  const effectHeaderContent = headerContent || mockHeaderContent;
+  // Compteur
 
-  const [compteur, setCompteur] = useState(0);
-  const plusClickedHandler = () => {
-    setCompteur(compteur + 1);
-  };
-
-  const moinsClickedHandler = () => {
-    setCompteur(compteur - 1);
-  };
   return (
-    <div className={effectiveContainerClass}>
-      <Layout
-        menuContent={effectiveCenuContent}
-        headerContent={{ ...effectHeaderContent, compteur }}
-      >
-        <div>
-          <button onClick={plusClickedHandler}>Plus</button>
-          <button onClick={moinsClickedHandler}>Moins</button>
-          <span>La valeur du compteur: {compteur} </span>
-        </div>
+    <div className={containerClass}>
+      <Layout menuContent={menuContent} headerContent={headerContent}>
+        <Compteur></Compteur>
+        <ColorBox colorsChannel={colorsChannel} />
       </Layout>
     </div>
   );
