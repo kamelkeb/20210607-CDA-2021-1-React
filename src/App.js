@@ -1,5 +1,5 @@
 import "./App.css";
-import ColorBox from "./ColorBox/ColorBox";
+import ColorBox2 from "./ColorBox2/ColorBox2";
 import Layout from "./Layout/Layout";
 import Compteur from "./Compteur/Compteur";
 import {
@@ -16,7 +16,7 @@ function App() {
     <div className={containerClass}>
       <Layout menuContent={menuContent} headerContent={headerContent}>
         <Compteur></Compteur>
-        <ColorBox colorsChannel={colorsChannel} />
+        <ColorBox2 colorsChannel={colorsChannel} />
       </Layout>
     </div>
   );
